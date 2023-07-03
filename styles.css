@@ -1,0 +1,134 @@
+/* Add this CSS code to your styles.css file */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  a {
+    color: #0099ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #0099ff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #fff;
+    color: #0099ff;
+  }
+  
+  /* Home Section Styles */
+  #home {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #home img {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    display: block;
+  }
+  
+  /* About Section Styles */
+  #about {
+    background-color: #fff;
+    padding: 10px 20px;
+  }
+  
+  #about p {
+    margin-bottom: 20px;
+  }
+  
+  /* Portfolio Section Styles */
+  #portfolio {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .item {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #0099ff;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .item {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
