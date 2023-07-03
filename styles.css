@@ -1,206 +1,235 @@
-/* Global Styles */
-body {
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background color */
+  body {
+    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3 {
-    margin: 0;
-}
-
-p {
-    margin: 0 0 1em;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
-header {
+  }
+  
+  /* Header styles */
+  header {
     background-color: #333;
-    color: #fff;
     padding: 20px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav li {
-    margin-left: 20px;
-}
-
-nav a {
-    color: #fff;
-}
-
-/* Home Section */
-section#home {
-    background-color: #f2f2f2;
     text-align: center;
-    padding: 100px 0;
-}
-
-section#home h1 {
+  }
+  header nav ul {
+    list-style: none;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  header nav ul li a:hover {
+    color: #ff8500;
+  }
+  
+  /* Home section styles */
+  section#home {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #fff;
+  }
+  section#home h1 {
     font-size: 48px;
     margin-bottom: 20px;
     color: #333;
-}
-
-section#home img {
-    max-width: 100%;
+  }
+  section#home img {
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-/* About Section */
-section#about {
-    padding: 100px 0;
-}
-
-section#about h2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* About section styles */
+  section#about {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+  }
+  section#about h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #333;
-}
-
-section#about p {
+  }
+  section#about p {
     font-size: 18px;
-    color: #666;
-}
-
-/* Portfolio Section */
-section#portfolio {
-    background-color: #f2f2f2;
-    padding: 100px 0;
-}
-
-section#portfolio h2 {
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Portfolio section styles */
+  section#portfolio {
+    padding: 60px 20px;
+  }
+  section#portfolio h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #333;
-}
-
-.gallery {
+  }
+  .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-.gallery .item {
+    gap: 20px;
+  }
+  .item {
+    text-align: center;
     background-color: #fff;
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.gallery img {
-    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .item img {
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    border-radius: 4px;
-}
-
-.gallery h3 {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .item h3 {
     font-size: 24px;
-    margin-top: 20px;
+    margin-bottom: 10px;
     color: #333;
-}
-
-.gallery p {
+  }
+  .item p {
     font-size: 16px;
-    color: #666;
-}
-
-/* Contact Section */
-section#contact {
-    padding: 100px 0;
-}
-
-section#contact h2 {
+    color: #555;
+  }
+  
+  /* Contact section styles */
+  section#contact {
+    background-color: #ff8500;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  section#contact h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333;
-}
-
-.contact-methods li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    color: #666;
-}
-
-.contact-methods i {
+    color: #fff;
+  }
+  .contact-methods {
+    list-style: none;
+    margin-top: 30px;
+  }
+  .contact-methods li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .contact-methods li:last-child {
+    margin-right: 0;
+  }
+  .contact-methods li i {
+    font-size: 24px;
+    color: #fff;
     margin-right: 10px;
-}
-
-.contact-methods a {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Footer */
-footer {
+  }
+  .contact-methods li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  .contact-methods li a:hover {
+    color: #333;
+  }
+  
+  /* Footer styles */
+  footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
+  }
+  footer p {
+    font-size: 14px;
+  }
+  
+  /* Media queries for responsive layout */
+  @media screen and (max-width: 768px) {
     section#home h1 {
-        font-size: 36px;
+      font-size: 36px;
     }
-
-    section#about p,
-    section#portfolio p,
-    section#contact p {
-        font-size: 16px;
+    section#home img {
+      max-width: 300px;
     }
-
+    section#about h2 {
+      font-size: 30px;
+    }
+    section#about p {
+      font-size: 16px;
+    }
+    section#portfolio h2 {
+      font-size: 30px;
+    }
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media screen and (max-width: 480px) {
-    header nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+    .item h3 {
+      font-size: 20px;
     }
-
-    header nav li {
-        margin: 10px;
+    .item p {
+      font-size: 14px;
     }
-
+    section#contact h2 {
+      font-size: 30px;
+    }
+    .contact-methods li i {
+      font-size: 20px;
+    }
+    .contact-methods li a {
+      font-size: 16px;
+    }
+    footer p {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
     section#home h1 {
-        font-size: 24px;
+      font-size: 24px;
     }
-
-    section#about p,
-    section#portfolio p,
-    section#contact p {
-        font-size: 14px;
+    section#about h2 {
+      font-size: 24px;
     }
-
+    section#about p {
+      font-size: 14px;
+    }
+    section#portfolio h2 {
+      font-size: 24px;
+    }
     .gallery {
-        grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
-}
+    .item h3 {
+      font-size: 18px;
+    }
+    .item p {
+      font-size: 12px;
+    }
+    section#contact h2 {
+      font-size: 24px;
+    }
+    .contact-methods li i {
+      font-size: 18px;
+    }
+    .contact-methods li a {
+      font-size: 14px;
+    }
+    footer p {
+      font-size: 10px;
+    }
+  }
+  
